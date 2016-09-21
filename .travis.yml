@@ -4,4 +4,6 @@ language: node_js
 node_js:
   - "6.0.0"
   - "6.1.0"
-install: ./bin/install_travis.sh
+install:
+  - cp .env.example .env
+  - npm install
