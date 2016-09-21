@@ -4,18 +4,4 @@ language: node_js
 node_js:
   - "6.0.0"
   - "6.1.0"
-env:
-  global:
-    - FACEBOOK_CLIENTID=<ID>
-    - FACEBOOK_SECRET=<SECRET>
-    - TWITTER_CLIENTID=<ID>
-    - TWITTER_SECRET=<SECRET>
-    - GITHUB_CLIENTID=<ID>
-    - GITHUB_SECRET=<SECRET>
-    - LINKEDIN_CLIENTID=<ID>
-    - LINKEDIN_SECRET=<SECRET>
-    - GOOGLE_CLIENTID=<ID>
-    - GOOGLE_SECRET=<SECRET>
-    - IMAGER_S3_KEY=AWS_S3_KEY
-    - IMAGER_S3_SECRET=AWS_S3_SECRET
-    - IMAGER_S3_BUCKET=AWS_S3_BUCKET
+install: ./bin/install_travis.sh
